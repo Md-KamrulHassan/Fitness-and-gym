@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/miama");
 
 .header_container {
-  max-width: 1536px;
+  width: 100%;
   height: auto;
   color: white;
   background: linear-gradient(50deg, rgb(17, 17, 17), rgb(26, 25, 25) 100%);
@@ -10,7 +10,7 @@
 }
 
 .header_container .container {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -52,13 +52,6 @@
   border-radius: 25px;
 }
 
-.content_section {
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  margin-top: 32px;
-}
-
 /* hamburger menu  */
 
 .open-menu,
@@ -82,7 +75,16 @@
   right: 10%;
 }
 
-/* fitness content  */
+/* content section  */
+
+.content_section {
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+/* >fitness content  */
 .fitness_content {
   width: 55%;
 }
@@ -127,9 +129,8 @@
   background: rgba(48, 48, 48, 0.57);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 13vw;
-  height: 6vw;
-  padding: 1vw;
+
+  padding: 3% 6%;
 }
 .tb1 {
   position: absolute;
@@ -150,14 +151,13 @@
   font-weight: 700;
 }
 .tb1 .video_numbers {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
 }
 .tb2 .video_numbers {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .video_desc {
   color: rgba(239, 237, 232, 0.65);
-  font-size: 1vw;
 }
 .icon img {
   width: 40px;
@@ -200,9 +200,42 @@
   #menu-1 {
     background-color: rgb(0, 0, 0);
   }
+  /* content section  */
+  .content_section {
+    flex-direction: column;
+  }
+  /* fitness content  */
+  .fitness_content {
+    width: 100%;
+  }
+  .fitness_content .title {
+    font-size: 3.5rem;
+  }
+  .tutorial {
+    width: 100%;
+  }
+  .tutorial_image {
+    width: 100%;
+  }
 }
 
 /* tab responsive  */
 
 @media (min-width: 576px) and (max-width: 992px) {
+  .header_container .container {
+    width: 85%;
+  }
+  .content_section {
+    flex-direction: column;
+  }
+
+  .fitness_content {
+    width: 100%;
+  }
+  .tutorial {
+    width: 100%;
+  }
+  .tutorial_image {
+    width: 100%;
+  }
 }

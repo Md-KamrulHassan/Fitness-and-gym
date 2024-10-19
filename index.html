@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Fitness</title>
   </head>
   <body>
@@ -16,12 +23,19 @@
             <span class="nav_logo">Fitness</span>
           </div>
           <div class="nav_menu">
+            <input type="checkbox" id="check" />
             <ul class="nav_list flexbox">
               <li id="menu-1"><a href="#">Home</a></li>
               <li id="menu-2"><a href="#">Service</a></li>
               <li id="menu-3"><a href="#">Contact</a></li>
               <li id="menu-4"><a href="#">About</a></li>
+              <label for="check" class="close-menu"
+                ><i class="fas fa-times"></i
+              ></label>
             </ul>
+            <label for="check" class="open-menu"
+              ><i class="fas fa-bars"></i
+            ></label>
           </div>
         </nav>
         <!-- header content section  -->
@@ -41,15 +55,21 @@
           </div>
           <div class="tutorial">
             <img src="images/Images 2.png" alt="" class="tutorial_image" />
-            <button class="tutorial_btn-1">
+            <button class="tutorial_btn tb1">
               <span class="video_numbers"> 500+</span>
               <br />
               <span class="video_desc"> Free Workout Videos</span>
             </button>
-            <button class="tutorial_btn-2">
-              <span class="video_numbers"> 350+</span>
-              <br />
-              <span class="video_desc"> Video tutorial</span>
+
+            <button class="tutorial_btn tb2 flexbox">
+              <div class="icon">
+                <img src="images/Group 21.png" alt="" class="icon_btn_img" />
+              </div>
+              <div class="details">
+                <span class="video_numbers"> 350+</span>
+                <br />
+                <span class="video_desc"> Video tutorial</span>
+              </div>
             </button>
           </div>
         </section>

@@ -1,0 +1,121 @@
+.membership_container {
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  gap: 40px;
+}
+.card_section {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card_1 {
+  background-color: rgb(34, 34, 34);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.service_type {
+}
+.price {
+  color: rgb(7, 171, 7);
+  font-size: 4rem;
+
+  font-style: italic;
+}
+.service_des {
+  font-size: 20px;
+  font-style: italic;
+}
+.available_service {
+  list-style: none;
+  text-align: left;
+}
+.available_service li {
+  margin-bottom: 20px;
+}
+.available_service li i {
+  color: gray;
+}
+
+.btn1 {
+  border-radius: unset;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s;
+}
+.btn1:hover {
+  color: white;
+  background-color: rgb(34, 34, 34);
+}
+
+.card_2 {
+  background-color: rgb(244, 239, 239);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.card_2 .available_service li i {
+  color: green;
+}
+.card_2 .service_type {
+  color: black;
+}
+.card_2 .service_des,
+.available_service {
+  color: gray;
+}
+.card_2 .btn1 {
+  background-color: rgb(26, 183, 102);
+  color: white;
+}
+.card_2 .btn1:hover {
+  background-color: rgb(25, 192, 106);
+}
+.membership_details {
+  width: 50%;
+}
+
+.membership_details hr {
+  border: 2px solid green;
+  width: 25%;
+}
+.membership_details h2 {
+  margin: 50px 0px;
+}
+
+@media (max-width: 575px) {
+  .membership_container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .card_section {
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+  }
+  .card_1 {
+    width: 100%;
+  }
+  .card_2 {
+    width: 100%;
+  }
+  .membership_details {
+    width: 100%;
+    order: 1;
+  }
+}

@@ -24,6 +24,7 @@ main {
 
 .feature_circle_card {
   gap: 8px;
+  justify-content: center;
 }
 .feature_circle_card .card {
   text-align: center;

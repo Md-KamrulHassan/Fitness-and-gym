@@ -1,0 +1,467 @@
+main {
+  margin: 100px 0px;
+}
+
+/* feature section  */
+.feature {
+  width: 80%;
+  margin: 0 auto;
+}
+.feature_about {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feature_about .title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 14px;
+}
+.feature_about .desc {
+}
+
+.feature_circle_card {
+  gap: 8px;
+}
+.feature_circle_card .card {
+  text-align: center;
+}
+
+.feature_circle_card img {
+  border-radius: 50%;
+  width: 60%;
+  border: 1px dotted white;
+  outline: 4px solid #272424;
+}
+
+.feature_circle_card .title {
+  color: white;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+
+/* run section  */
+
+.run_section {
+  width: 70%;
+  background-color: rgb(34, 34, 34);
+  margin: 92px auto;
+  padding: 35px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.run_section_about {
+  width: 60%;
+  padding: 2% 6%;
+}
+.run_section_about .desc {
+  margin-bottom: 20px;
+}
+.run_image_section {
+  width: 40%;
+}
+
+.run_image_section .bg_img {
+  background-image: url(../images/run.jpg);
+  background-position: 69% 30%;
+  background-size: 279%;
+  width: 100%;
+
+  height: 287px;
+  border-radius: 25px;
+}
+/* training section  */
+
+.training_container {
+  width: 70%;
+  margin: 92px auto;
+}
+
+.training_photo_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "area-1 area-2 area-2 area-2 area-3"
+    "area-4 area-4 area-5 area-6 area-6";
+  margin-top: 58px;
+}
+.area-1,
+.area-2,
+.area-3,
+.area-4,
+.area-5,
+.area-6 {
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 28vh;
+}
+
+.area-1::after,
+.area-2::after,
+.area-3::after,
+.area-4::after,
+.area-5::after,
+.area-6::after {
+  position: absolute;
+  z-index: 5;
+  font-weight: 400;
+  color: white;
+}
+.area-1::before,
+.area-2::before,
+.area-3::before,
+.area-4::before,
+.area-5::before,
+.area-6::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.area-1 {
+  grid-area: area-1;
+  background-image: url(../images/exercise1.jpg);
+}
+.area-1::before {
+  background-color: rgb(7, 239, 196, 0.5);
+}
+.area-1::after {
+  content: "Lorem";
+  bottom: 23px;
+  left: 20px;
+  color: black;
+}
+
+.area-2 {
+  grid-area: area-2;
+  background-image: url(../images/exercise2.png);
+}
+.area-2::before {
+  background-color: rgba(222, 76, 76, 0.5);
+}
+.area-2::after {
+  content: "Plunk";
+  top: 40px;
+  left: 29px;
+}
+.area-3 {
+  grid-area: area-3;
+  background-image: url(../images/exercise3.png);
+}
+.area-3::before {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.area-3::after,
+.area-5:after,
+.area-6::after {
+  content: "Leg Press: Works the quadriceps and glutes";
+  bottom: 23px;
+  left: 20px;
+}
+.area-4 {
+  grid-area: area-4;
+  background-image: url(../images/exercise4.png);
+}
+.area-4::before {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.area-4::after {
+  content: "Leg Press: Works the \A quadriceps and glutes";
+  white-space: pre;
+  top: 23px;
+  right: 20px;
+}
+.area-5 {
+  grid-area: area-5;
+  background-image: url(../images/exercise5.jpg);
+}
+.area-5::before {
+  background-color: rgb(66, 255, 0, 0.5);
+}
+.area-6 {
+  grid-area: area-6;
+  background-image: url(../images/exercise6.jpg);
+}
+.area-6::before {
+  background-color: rgb(0, 72, 255, 0.5);
+}
+.area-6::after {
+  content: "Leg Press: Works the \A quadriceps and glutes";
+  white-space: pre;
+}
+
+.area_img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* calulator section  */
+.calculation_container {
+}
+.calculation_about {
+  width: 50%;
+  margin: 0 auto;
+}
+.calculate_bmi_container {
+  background-color: rgb(34, 34, 34);
+
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.calculate_bmi {
+  justify-content: center;
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.chart_table {
+  width: 50%;
+}
+.chart_table table {
+  color: white;
+  margin: 0 auto;
+  text-align: left;
+}
+td,
+th,
+table {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+tbody {
+  font-size: 14px;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.calculator_container {
+  width: 50%;
+}
+
+.calculator h2,
+p {
+  margin-bottom: 15px;
+}
+
+input,
+#gender,
+#Activity {
+  padding: 20px;
+  width: 45%;
+  margin: 10px 10px 5px 0px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+input::placeholder,
+select:invalid {
+  color: rgb(255, 255, 255, 0.6) !important;
+}
+#Activity {
+  display: block;
+  width: 93%;
+}
+
+option {
+  color: black;
+}
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+/* our_team section  */
+
+.our_team_container {
+  width: 70%;
+  margin: 80px auto;
+}
+
+.team_about {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team_photo_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: rgb(34, 34, 34);
+  padding: 20px;
+  border-radius: 20px;
+}
+.photo-1 {
+  background-image: url(../images/trainer1.png);
+}
+.photo-2 {
+  background-image: url(../images/trainer2.png);
+}
+.photo-3 {
+  background-image: url(../images/trainer3.png);
+}
+.photo-4 {
+  background-image: url(../images/trainer4.png);
+}
+.photo-5 {
+  background-image: url(../images/trainer5.png);
+}
+.photo-6 {
+  background-image: url(../images/trainer6.png);
+}
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5,
+.photo-6 {
+  width: 100%;
+  height: 272px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.photo-1::before,
+.photo-2::before,
+.photo-3::before,
+.photo-4::before,
+.photo-5::before,
+.photo-6::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+.photo_desc {
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+  font-weight: bold;
+}
+.photo_name {
+  font-size: 18px;
+  font-weight: 900;
+}
+.photo_title {
+  color: gray;
+  font-size: 12px;
+}
+@media screen and (max-width: 575px) {
+  main {
+    margin: unset;
+  }
+  .feature {
+    width: 90%;
+  }
+  .feature_about {
+    width: 75%;
+  }
+  .feature_circle_card {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* run section  */
+  .run_section {
+    width: 90%;
+    flex-direction: column;
+  }
+  .run_section_about {
+    width: 100%;
+  }
+  .run_section_about button {
+    padding: 2vw 20vw;
+  }
+  .run_image_section {
+    width: 100%;
+  }
+  .run_image_section .bg_img {
+    background-position: 78% 15%;
+    background-size: 180%;
+  }
+  /* training section  */
+  .training_container {
+    width: 90%;
+  }
+  .training_photo_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "area-1 area-2 "
+      "area-4 area-5";
+  }
+
+  .area-4::after,
+  .area-5::after {
+    content: "Leg Press";
+  }
+  .area-3,
+  .area-6 {
+    display: none;
+  }
+
+  /* calculator section  */
+  .calculation_container {
+  }
+  .calculation_about {
+    width: 90%;
+  }
+  .calculate_bmi {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+  .chart_table {
+    width: 100%;
+  }
+  .calculator_container {
+    width: 100%;
+  }
+  .chart_table table {
+    margin: unset;
+  }
+  caption {
+    text-align: left;
+  }
+  /* our_team section  */
+
+  .our_team_container {
+    width: 90%;
+  }
+  .team_photo_grid {
+    grid-template-columns: 1fr;
+  }
+  .photo-1,
+  .photo-4 {
+    display: none;
+  }
+  .photo-3 {
+    order: 1;
+  }
+  .photo-6 {
+    order: 2;
+  }
+}

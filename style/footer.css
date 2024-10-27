@@ -1,0 +1,73 @@
+footer {
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.footer_container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.information_section {
+  margin-bottom: 60px;
+}
+.about_us {
+  width: 50%;
+}
+.about_us .title {
+  font-size: 3rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.services {
+  width: 50%;
+  gap: 80px;
+  justify-content: space-evenly;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.section_1,
+.section_2 {
+  text-align: left;
+}
+
+.service_list {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.service_list li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 2px;
+}
+.copy_wright {
+  text-align: center;
+  display: block;
+  margin-top: 36px;
+}
+
+@media (max-width: 575px) {
+  .footer_container {
+    width: 90%;
+  }
+  .information_section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about_us {
+    width: 100%;
+  }
+  .services {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
